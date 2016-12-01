@@ -1,3 +1,20 @@
+
+#include <opencv2\core.hpp>
+#include <opencv2\calib3d.hpp>
+#include <opencv2/features2d.hpp>
+#include <opencv2/imgproc.hpp>
+#include <iostream>
+#include <vector>
+#include <map>
+#include "ovrvision_setting.h"
+#include <pcl/common/common_headers.h>
+#include <pcl/features/normal_3d.h>
+#include <pcl/io/pcd_io.h>
+#include <pcl/console/parse.h>
+#include <pcl/point_types.h>
+#include <pcl/registration/icp.h>
+#include <pcl/registration/transformation_estimation_svd.h>
+
 get_stereo_depth::get_stereo_depth()
 {
 	//default num tracker is 4
