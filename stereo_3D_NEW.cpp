@@ -33,7 +33,7 @@ get_stereo_depth::get_stereo_depth()
 	temp_xyz = (new pcl::PointCloud<pcl::PointXYZ>);
 	
 
-	//These points are template points, so we have measured these point using a ruler in the physical world
+	//These points are template points, so we have measured these point using a ruler in the physical worldf
 	green_points->push_back(pcl::PointXYZ(128.78/1000.0, 40.16/1000.0, 0.0));
 	green_points->push_back(pcl::PointXYZ(99.43/1000.0, -11.87/1000.0, -0.0));
 	green_points->push_back(pcl::PointXYZ(39.77/1000.0, 0.0, -0.0));
