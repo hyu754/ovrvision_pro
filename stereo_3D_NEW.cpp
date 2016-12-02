@@ -15,12 +15,15 @@
 #include <pcl/registration/icp.h>
 #include <pcl/registration/transformation_estimation_svd.h>
 
+
+
 get_stereo_depth::get_stereo_depth()
 {
-	//default num tracker is 4
+	//default num tracker is 4, this can be more, but will require more computation
+	//and also the map needs to be changed in rigid_pose_estimation
 	num_tracker_points = 4;
 	
-	
+	//Distance template 
 	distance_template.push_back(59.67 / 1000.0);
 	distance_template.push_back(60.45 / 1000.0);
 	distance_template.push_back(39.93 / 1000.0);
